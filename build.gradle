@@ -29,10 +29,10 @@ allprojects {
         implementation 'org.jetbrains:annotations:24.0.1'
         implementation 'com.google.code.findbugs:jsr305:3.0.2'
 
-        compileOnly 'org.projectlombok:lombok:1.18.26'
-        testImplementation 'org.projectlombok:lombok:1.18.26'
-        annotationProcessor 'org.projectlombok:lombok:1.18.26'
-        testAnnotationProcessor 'org.projectlombok:lombok:1.18.26'
+        compileOnly 'org.projectlombok:lombok:1.18.30'
+        testImplementation 'org.projectlombok:lombok:1.18.30'
+        annotationProcessor 'org.projectlombok:lombok:1.18.30'
+        testAnnotationProcessor 'org.projectlombok:lombok:1.18.30'
         testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.3'
         testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.3'
     }
