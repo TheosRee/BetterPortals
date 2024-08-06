@@ -8,13 +8,7 @@ import org.bukkit.Bukkit;
  * This means that we have to use reflection to access them if we want to work across versions.
  */
 public class CraftBukkitClassUtil {
-    private static final String packageVersion; // Name of the NMS/craftbukkit packages, e.g. 1_12_R1
-    private static final String craftBukkitClassPrefix; // E.g. org.bukkit.craftbukkit.1_12_R1
-
-    static {
-        packageVersion = Bukkit.getServer().getClass().getPackage().getName().split("\\.")[3];
-        craftBukkitClassPrefix = String.format("org.bukkit.craftbukkit.%s.", packageVersion);
-    }
+    private static final String craftBukkitClassPrefix = Bukkit.getServer().getClass().getPackage().getName() + ".";
 
     /**
      * Finds a class in the <code>org.bukkit.craftbukkit.version</code> package
