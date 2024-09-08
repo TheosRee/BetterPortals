@@ -1,5 +1,5 @@
 # BetterPortals
-BetterPortals is a minecraft spigot plugin which allows you to see through nether portals to look at the blocks on the other side.
+BetterPortals is a minecraft paper plugin which allows you to see through nether portals to look at the blocks on the other side.
 
 It aims to provide a similar experience to the BetterPortals mod, but as a plugin, so it requires no client side mods.
 
@@ -26,9 +26,9 @@ Of course, being a plugin, there are several limitations.
 ## Compilation
 Requirements to build:
 - [Gradle](https://gradle.org/install/) 7 or higher installed and on `PATH`.
-- Java 8 or higher on `PATH` and `JAVA_HOME` also set to point to the folder containing the bin folder.
+- Java 21 or higher on `PATH` and `JAVA_HOME` also set to point to the folder containing the bin folder.
 
-1. Clone this repository (either via the `Code` dropdown on github and then downloading ZIP, or through `git clone https://github.com/Lauriethefish/BetterPortals.git`).
+1. Clone this repository (either via the `Code` dropdown on GitHub and then downloading ZIP, or through `git clone https://github.com/Lauriethefish/BetterPortals.git`).
 2. If you want to add the commit hash to the version number (i.e. have the JAR be considered a "dev build"), then set the `BP_DEVELOPER_BUILD` environment variable to `1`.
 3. Run `gradle build` in the project root.
-4. The shaded JAR is found in `./final/build/libs/`. Make sure to pick the JAR with `-all` at the end, otherwise you will not get all of the necessary dependencies. [Example](https://i.imgur.com/yVYI1IW.png)
+4. The shaded JAR is found in `./final/build/libs/`. Make sure to pick the JAR with `-all` at the end, otherwise you will not get all the necessary dependencies. [Example](https://i.imgur.com/yVYI1IW.png)
